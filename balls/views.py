@@ -46,9 +46,11 @@ def results_view(request):
         false_balls = request.data.get("false_balls")
         balls = request.data.get("balls")
         red_balls = request.data.get("red_balls")
+        target_balls = request.data.get("target_balls")
+        clicked_balls = request.data.get("clicked_balls")
         speed = request.data.get("speed")
         radius = request.data.get("radius")
-        result = Result(success=success, user=request.user, level=level, true_balls=true_balls, false_balls=false_balls, balls=balls, red_balls=red_balls, speed=speed, radius=radius)
+        result = Result(success=success, user=request.user, level=level, true_balls=true_balls, false_balls=false_balls, balls=balls, red_balls=red_balls, target_balls=target_balls, clicked_balls=clicked_balls, speed=speed, radius=radius)
         result.save()
 
     first_result = Result.objects.filter(user=request.user).last()
