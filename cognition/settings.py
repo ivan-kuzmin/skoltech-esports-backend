@@ -45,6 +45,7 @@ INSTALLED_APPS = [
     'balls',
     'reaction_test',
     'reaction_decision_test',
+    'keyboard_mouse_coordination',
 ]
 
 MIDDLEWARE = [
