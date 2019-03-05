@@ -23,5 +23,6 @@ urlpatterns = [
     path('reaction_test/', include('reaction_test.urls')),
     path('reaction_decision_test/', include('reaction_decision_test.urls')),
     path('keyboard_mouse_coordination/', include('keyboard_mouse_coordination.urls')),
+    path('mouse_tracking/', include('mouse_tracking.urls')),
     path('api/v0/', include('api_v0.urls')),
 ]

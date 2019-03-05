@@ -46,6 +46,7 @@ INSTALLED_APPS = [
     'reaction_test',
     'reaction_decision_test',
     'keyboard_mouse_coordination',
+    'mouse_tracking',
 ]
 
 MIDDLEWARE = [
